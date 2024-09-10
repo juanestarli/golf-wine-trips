@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div style={{ padding: '20px', fontFamily: 'SpaceGroteskBold, sans-serif', color: "white", backgroundColor: "blue" }}>
+      <div style={{ padding: '20px', fontFamily: 'SpaceGroteskBold, sans-serif', color: "white", backgroundColor: "black" }}>
       <h1>JUAN ESTARLI</h1>
       <p>
         Hello, my name is Juan Estarli. I am a passionate web developer with a background in
