@@ -16,27 +16,17 @@ const slides = [
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: "black", height: "100vh" }}>
       <NavBar />
-      <div style={{ padding: '20px', fontFamily: 'SpaceGroteskBold, sans-serif', color: "white", backgroundColor: "black" }}>
+      <div style={{ paddingTop: '70px', paddingLeft: "20px", 
+    fontFamily: 'SpaceGroteskBold, sans-serif', color: "white", backgroundColor: "black", textAlign: 'left', fontSize: '20px',width: "50%",left: '10%', }}>
+      <p>
+        Hi, I´m Juan Estarli. I am a passionate web developer with a background in
+        Information Engineering. Currently, I work as a web developer at Teatro Colón.
+      </p>
+    </div>
+    <div style={{ paddingTop: '250px', fontFamily: 'SpaceGroteskBold, sans-serif', color: "#FF9A00", backgroundColor: "black", width: "100%", textAlign: 'center',verticalAlign:"middle", fontSize:"14vw", height:"100%" }}>
       <h1>JUAN ESTARLI</h1>
-      <p>
-        Hello, my name is Juan Estarli. I am a passionate web developer with a background in
-        Information Engineering. Currently, I work as a web developer at Kelsus and also as the
-        webmaster of Teatro Colón.
-      </p>
-      <p>
-        I love learning new technologies, and I am constantly looking for opportunities to grow 
-        professionally. Some of my key skills include fast learning, attention to detail, and 
-        commitment to excellence.
-      </p>
-      <p>
-        In addition to web development, I have a keen interest in cryptocurrencies and enjoy 
-        exploring futuristic scenarios related to blockchain technology.
-      </p>
-      <p>
-        Feel free to connect with me if you want to collaborate or learn more about my journey!
-      </p>
     </div>
       <Carousel>
         {slides.map((s)=> (
