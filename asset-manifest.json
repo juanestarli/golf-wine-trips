@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolioJuanEstarli/static/css/main.3579e17c.css",
+    "main.js": "/portfolioJuanEstarli/static/js/main.a422c531.js",
+    "static/js/453.ed3810f9.chunk.js": "/portfolioJuanEstarli/static/js/453.ed3810f9.chunk.js",
+    "static/media/SPACEGROTESK-BOLD.OTF": "/portfolioJuanEstarli/static/media/SPACEGROTESK-BOLD.84491a7b22b78320f103.OTF",
+    "static/media/SPACEGROTESK-LIGHT.OTF": "/portfolioJuanEstarli/static/media/SPACEGROTESK-LIGHT.4f28aa818ef836a4d0bf.OTF",
+    "index.html": "/portfolioJuanEstarli/index.html",
+    "main.3579e17c.css.map": "/portfolioJuanEstarli/static/css/main.3579e17c.css.map",
+    "main.a422c531.js.map": "/portfolioJuanEstarli/static/js/main.a422c531.js.map",
+    "453.ed3810f9.chunk.js.map": "/portfolioJuanEstarli/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3579e17c.css",
+    "static/js/main.a422c531.js"
+  ]
+}
