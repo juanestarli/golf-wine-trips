@@ -1,14 +1,14 @@
 import React from 'react';
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Projects', href: '#', current: true },
   { name: 'Contact', href: '#', current: false }
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function NavBar() {
@@ -16,24 +16,17 @@ export default function NavBar() {
     <Disclosure as="nav" className="bg-black">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          {/* Mobile menu button */}
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <DisclosureButton className="group inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
+          
+
+          {/* JE clickable link */}
+          <div className="flex flex-1 left-0 items-center justify-center sm:justify-start">
+            <DisclosureButton as="a" href="#" className="text-white text-xl font-bold px-4 py-2 rounded-md sm:hidden">
+              JE
             </DisclosureButton>
           </div>
 
-          {/* JE clickable link */}
-          <div className="flex flex-1 items-center justify-start sm:justify-start">
-            <a href="#" className="text-white text-xl font-bold px-4 py-2 rounded-md">
-              JE
-            </a>
-          </div>
-
           {/* Desktop menu */}
-          <div className="hidden sm:flex sm:items-center sm:justify-center sm:space-x-4">
+          <div className="hidden sm:flex sm:items-center sm:justify-end sm:space-x-4">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -70,5 +63,5 @@ export default function NavBar() {
         </div>
       </DisclosurePanel>
     </Disclosure>
-  )
+  );
 }
