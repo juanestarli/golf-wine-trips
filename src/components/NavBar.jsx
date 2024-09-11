@@ -19,14 +19,14 @@ export default function NavBar() {
           
 
           {/* JE clickable link */}
-          <div className="flex flex-1 left-0 items-center justify-center sm:justify-start">
-            <DisclosureButton as="a" href="#" className="text-white text-xl font-bold px-4 py-2 rounded-md sm:hidden">
+          <div className="flex flex-1 left-0 items-center justify-center sm:justify-center">
+            <DisclosureButton as="a" href="#" className="text-white text-xl font-bold px-4 py-2 rounded-md sm:block md:hidden">
               JE
             </DisclosureButton>
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden sm:flex sm:items-center sm:justify-end sm:space-x-4">
+          <div className="sm:hidden md:block sm:items-center sm:justify-end sm:space-x-4 ">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -44,7 +44,7 @@ export default function NavBar() {
       </div>
 
       {/* Mobile menu panel */}
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="sm:block">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton
