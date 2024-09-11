@@ -10,8 +10,8 @@ export const Inicio = () => {
         Information Engineering. Currently, I work as a web developer at Teatro Colón.
       </p>
     </div>
-    <div >
-      <h1 className="pt-[100px] font-['SpaceGroteskBold'] text-[#FF9A00] bg-black w-full text-center align-middle text-[14vw] h-[100%]">JUAN ESTARLI</h1>
+    <div className="pt-[100px] pb-0 font-['SpaceGroteskBold'] text-[#FF9A00] bg-black w-full text-center align-middle text-[14vw] h-screen">
+      <h1 >JUAN ESTARLI</h1>
     </div>
     <div className="pt-0 pl-2 font-space-grotesk font-bold text-white bg-black w-full text-left text-[10vw] h-[40%]">
       <h1 className="w-1/2 leading-[0.8]">Featured work</h1>
@@ -21,6 +21,7 @@ export const Inicio = () => {
         imageSrc="https://www.revistaelabasto.com.ar/wp-content/uploads/2022/12/argentina-campeon.jpg"
         imageAlt="Descripción de la imagen"
         title="Argentina"
+        onClick={() => window.location.href= '/Work'}
         description="Campeones del mundo 2022"
       />
       <CardProject
