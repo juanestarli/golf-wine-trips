@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: "black", height: "100vh", overflowX: 'hidden'}}>
       <NavBar />
-      <div className="pt-[70px] pl-[20px] font-['SpaceGroteskBold'] text-white bg-black text-left text-[20px] md:w-1/2 left-[10%]">
+      <div className="pt-[70px] pl-[20px] pr-[20px]font-['SpaceGroteskBold'] text-white bg-black text-left text-[20px] md:w-1/2 left-[10%]">
       <p>
         Hi, I´m Juan Estarli. I am a passionate web developer with a background in
         Information Engineering. Currently, I work as a web developer at Teatro Colón.
