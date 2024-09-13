@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import Work from "./pages/Work";
+import { Contact } from "./pages/Contact";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         
         <Route path="/" element={<Inicio />} />
         <Route path="/Work" element={<Work />} />
+        <Route path="/Contact" element={<Contact />} />
         
         </Routes>
       </main>
