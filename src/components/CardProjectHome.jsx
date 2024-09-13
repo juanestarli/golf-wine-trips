@@ -1,11 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importa Link
 
-// Definir el componente CardProject
-const CardProject = ({ imageSrc, imageAlt, onClick, title, description }) => {
+const CardProject = ({ imageSrc, imageAlt, title, description }) => {
   return (
-    <div style={styles.cardContainer}>
+    <Link 
+      to={`/work/${encodeURIComponent(title)}`} // Usar Link para la navegación
+      style={styles.cardContainer} 
+      className="card" // Añadir clase si necesitas estilos adicionales
+    >
       {/* Imagen clickeable */}
-      <div onClick={onClick} style={styles.imageContainer}>
+      <div style={styles.imageContainer}>
         <img src={imageSrc} alt={imageAlt} style={styles.image} />
       </div>
       {/* Texto debajo de la imagen */}
@@ -13,7 +17,7 @@ const CardProject = ({ imageSrc, imageAlt, onClick, title, description }) => {
         <p style={styles.title}>{title}</p>
         <p style={styles.description}>{description}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -22,15 +26,17 @@ const styles = {
   cardContainer: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'left',
+    alignItems: 'flex-start', // Cambiado de 'left' a 'flex-start'
     width: '100%',  // Ajusta el ancho según sea necesario
     padding: '30px',
     cursor: 'pointer',
-    backgroundcolor: "black",
+    backgroundColor: 'black', // Corregido el error de 'backgroundcolor'
+    textDecoration: 'none', // Evitar subrayado en el Link
   },
   imageContainer: {
     width: '100%',
-    height: 'auto'
+    height: 'auto',
+    hover: "round-full",
   },
   image: {
     width: '100%',
@@ -42,14 +48,14 @@ const styles = {
     fontSize: '16px',
     color: 'white',
     textAlign: 'left',
-    fontFamily: 'SpaceGroteskLight, sans-serif', 
+    fontFamily: 'SpaceGroteskLight, sans-serif',
   },
   title: {
-    fontFamily: 'SpaceGroteskBold, sans-serif', 
-    color: "white",
-    fontSize: "42px",
+    fontFamily: 'SpaceGroteskBold, sans-serif',
+    color: 'white',
+    fontSize: '42px',
     textAlign: 'left',
-  }
+  },
 };
 
 export default CardProject;

@@ -1,35 +1,41 @@
-import React from 'react'
-import CardProject from '../components/CardProject'
+import React, { useEffect, useState } from 'react';
+import CardProjectHome from '../components/CardProjectHome';
+import trabajosData from '../data/trabajos.json'; // Asegúrate de poner la ruta correcta
 
 export const Inicio = () => {
+  const [featuredWorks, setFeaturedWorks] = useState([]);
+
+  useEffect(() => {
+    // Filtrar los trabajos destacados
+    const filteredWorks = trabajosData.filter(trabajo => trabajo.featured);
+    setFeaturedWorks(filteredWorks);
+  }, []);
+
   return (
     <>
-        <div className="pt-[70px] pl-[20px] pr-[20px]font-['SpaceGroteskBold'] text-white bg-black text-left text-[20px] md:w-1/2 left-[10%]">
-      <p>
-        Hi, I´m Juan Estarli. I am a passionate web developer with a background in
-        Information Engineering. Currently, I work as a web developer at Teatro Colón.
-      </p>
-    </div>
-    <div className="pt-[100px] pb-0 font-['SpaceGroteskBold'] text-[#FF9A00] bg-black w-full text-center align-middle text-[14vw] h-screen">
-      <h1 >JUAN ESTARLI</h1>
-    </div>
-    <div className="pt-0 pl-2 font-space-grotesk font-bold text-white bg-black w-full text-left text-[10vw] h-[40%]">
-      <h1 className="w-1/2 leading-[0.8]">Featured work</h1>
-    </div>
+      <div className="pt-[70px] pl-10 pr-[20px] font-['SpaceGroteskBold'] text-white bg-black text-left text-[20px] md:w-1/2 left-[10%]">
+        <p>
+          Hi, I´m Juan Estarli. I am a passionate web developer with a background in
+          Information Engineering. Currently, I work as a web developer at Teatro Colón.
+        </p>
+      </div>
+      <div className="pt-[100px] pb-0 font-['SpaceGroteskBold'] text-[#FF9A00] bg-black w-full text-center align-middle text-[14vw] h-screen">
+        <h1>JUAN ESTARLI</h1>
+      </div>
+      <div className="pt-0 pl-10 pb-10 font-space-grotesk font-bold text-white bg-black w-full text-left text-[10vw] h-[40%]">
+        <h1 className="w-1/2 leading-[0.8]">Featured work</h1>
+      </div>
 
-    <CardProject
-        imageSrc="https://www.revistaelabasto.com.ar/wp-content/uploads/2022/12/argentina-campeon.jpg"
-        imageAlt="Descripción de la imagen"
-        title="Argentina"
-        onClick={() => window.location.href= '/Work'}
-        description="Campeones del mundo 2022"
-      />
-      <CardProject
-        imageSrc="https://pbs.twimg.com/media/FkSE245XwAIr6_7.jpg:large"
-        imageAlt="Descripción de la imagen"
-        title="Lionel Messi"
-        description="Rey del mundo 2022"
-      />
+      {/* Mostrar los trabajos destacados */}
+      {featuredWorks.map(trabajo => (
+        <CardProjectHome
+          key={trabajo.id}
+          imageSrc={trabajo.image}
+          imageAlt={trabajo.title}
+          title={trabajo.title}
+          description={trabajo.description}
+        />
+      ))}
     </>
-  )
-}
+  );
+};

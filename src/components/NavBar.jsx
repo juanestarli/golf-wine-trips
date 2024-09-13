@@ -1,10 +1,14 @@
 import React from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom'; // Importa Link para manejar rutas
 
 const navigation = [
-  { name: 'Work', href: '#', current: true },
-  { name: 'Contact', href: '#', current: false }
+  { name: 'Work', href: '/work', current: false },
+  { name: 'Contact', href: '/contact', current: false }
+];
+
+const juanEstarli = [
+  { name: 'Juan Estarli', href: '/', current: true }
 ];
 
 function classNames(...classes) {
@@ -17,28 +21,48 @@ export default function NavBar() {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           
+          {/* Desktop menu with Juan Estarli aligned to the left */}
+          <div className="hidden sm:hidden md:flex md:items-center md:space-x-4 md:w-full ">
+            {/* Juan Estarli aligned to the left */}
+            <div className="flex-1">
+              {juanEstarli.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  aria-current={item.current ? 'page' : undefined}
+                  className={classNames(
+                    item.current ? 'text-white' : 'text-gray-300',
+                    'text-xl font-bold px-4 py-2 rounded-md'
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
 
-          {/* JE clickable link */}
-          <div className="flex flex-1 left-0 items-center justify-center sm:justify-center">
-            <DisclosureButton as="a" href="#" className="text-white text-xl font-bold px-4 py-2 rounded-md sm:block md:hidden">
-              JE
-            </DisclosureButton>
+            {/* Other desktop menu items aligned to the right */}
+            <div className="flex space-x-4">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  aria-current={item.current ? 'page' : undefined}
+                  className={classNames(
+                    item.current ? 'text-white' : 'text-gray-300',
+                    'hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
           </div>
 
-          {/* Desktop menu */}
-          <div className="sm:hidden md:block sm:items-center sm:justify-end sm:space-x-4 ">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                aria-current={item.current ? 'page' : undefined}
-                className={classNames(
-                  item.current ? 'text-white' : 'text-gray-300'
-                )}
-              >
-                {item.name}
-              </a>
-            ))}
+          {/* Mobile menu button */}
+          <div className="flex md:hidden items-center justify-center">
+            <DisclosureButton as="a" href="#" className="text-white text-xl font-bold px-4 py-2 rounded-md">
+              JE
+            </DisclosureButton>
           </div>
         </div>
       </div>
@@ -49,8 +73,8 @@ export default function NavBar() {
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
-              as="a"
-              href={item.href}
+              as={Link}
+              to={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
                 item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',

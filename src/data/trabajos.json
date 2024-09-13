@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Lemos Florería",
+      "description": "Florería boutique ubicada en el barrio de Chacarita.",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipPeF-4brOkMh64-6fgdSB5WpySuHU2ncFeE1E6Y=s680-w680-h510",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Argentina",
+      "description": "Campeones del mundo 2022",
+      "image": "https://www.revistaelabasto.com.ar/wp-content/uploads/2022/12/argentina-campeon.jpg",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Lionel Messi",
+      "description": "Rey del mundo 2022",
+      "image": "https://pbs.twimg.com/media/FkSE245XwAIr6_7.jpg:large",
+      "featured": true
+    }
+  ]
+  
