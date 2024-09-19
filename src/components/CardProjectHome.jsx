@@ -28,10 +28,11 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'flex-start', // Cambiado de 'left' a 'flex-start'
     width: '100%',  // Ajusta el ancho según sea necesario
-    padding: '30px',
+    padding: '50px',
     cursor: 'pointer',
     backgroundColor: 'black', // Corregido el error de 'backgroundcolor'
     textDecoration: 'none', // Evitar subrayado en el Link
+    hover: "round-full",
   },
   imageContainer: {
     width: '100%',

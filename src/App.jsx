@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import Work from "./pages/Work";
 import { Contact } from "./pages/Contact";
+import { About } from "./pages/About";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/Work" element={<Work />} />
         <Route path="/Contact" element={<Contact />} />
-        
+        <Route path="/About" element={<About />} />
         </Routes>
       </main>
       <Footer />
