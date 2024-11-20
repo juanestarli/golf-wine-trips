@@ -13,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App" style={{backgroundColor: "white", height: "100vh", overflowX: 'hidden'}}>
+      <div className="App" style={{backgroundColor: "black", height: "100vh", overflowX: 'hidden'}}>
       <Header />
       <main>
       <Routes>
