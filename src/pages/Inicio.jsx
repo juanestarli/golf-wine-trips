@@ -13,16 +13,23 @@ export const Inicio = () => {
 
   return (
     <>
-      <div className="pt-[70px] pl-10 pr-[20px] font-['SpaceGroteskBold'] text-white bg-black text-left text-[20px] md:w-1/2 left-[10%]">
-        <p>
-          Hi, I´m Juan Estarli. I am a passionate web developer with a background in
-          Computer Engineering. Currently, I work as a web developer at Teatro Colón.
-        </p>
+      <div className="relative w-full h-screen">
+        <img 
+          src="/mendoza golf.jpg" 
+          alt="Imagen de fondo" 
+          className="absolute inset-0 w-full h-full object-cover" 
+        />
       </div>
-      <div className="pt-[100px] pb-[400px] font-['SpaceGroteskBold'] text-[#FF9A00] bg-black w-full text-center align-middle text-[14vw] md:h-screen s:max-h-[100px]">
-        <h1>JUAN ESTARLI</h1>
+      <div className="relative w-full h-[40vh] bg-white">
+        <img 
+          src="logo-golf-wine.png" 
+          alt="Logo" 
+          className="absolute inset-0 m-auto max-w-full max-h-full object-contain" 
+        />
       </div>
-      <div className="s:pt-[0px] md:pt-0 pl-10 pb-10 font-space-grotesk font-bold text-white bg-black w-full text-left text-[10vw] h-[40%]">
+
+
+      <div className="s:pt-[0px] md:pt-10 pl-10 pb-10 font-space-grotesk font-bold text-white bg-black w-full text-left text-[10vw] h-[40%]">
         <h1 className="w-1/2 leading-[0.8]">Featured work</h1>
       </div>
 
