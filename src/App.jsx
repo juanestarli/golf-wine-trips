@@ -4,7 +4,7 @@ import { Inicio } from "./pages/Inicio";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
-import Work from "./pages/Work";
+import Paquetes from "./pages/Paquetes";
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
 
@@ -19,9 +19,9 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Inicio />} />
-        <Route path="/Work" element={<Work />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/paquetes" element={<Paquetes />} />
+        <Route path="/contacto" element={<Contact />} />
+        <Route path="/nosotros" element={<About />} />
         </Routes>
       </main>
       <Footer />

@@ -3,7 +3,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Link } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Quienés somos', href: '/quienes-somos', current: false },
+  { name: 'Nosotros', href: '/nosotros', current: false },
   { name: 'Paquetes', href: '/paquetes', current: false },
   { name: 'Contacto', href: '/contacto', current: false },
 ];
@@ -19,7 +19,12 @@ export default function NavBar() {
         <div className="relative flex h-16 items-center justify-between">
           {/* Logo aligned to the left */}
           <div className="flex items-center">
-            <Link to="/" className="text-black text-xl font-bold px-4 py-2">
+            <img 
+              src="logo-golf-wine.png" 
+              alt="Logo" 
+              className="w-8 h-8 object-contain" 
+            />
+            <Link to="/" className="text-black text-xl font-bold px-2 py-2 font-['SpaceGroteskBold']">
               Golf & Wine Trips
             </Link>
           </div>

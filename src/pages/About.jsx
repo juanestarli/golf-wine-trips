@@ -2,44 +2,37 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <section className="text-white p-10 md:p-20">
-      <div className="w-full">
+    
+    <section className="text-black ">
+      <div className="relative w-full h-[40vh]">
+        <img 
+          src="/mendoza golf.jpg" 
+          alt="Imagen de fondo" 
+          className="absolute inset-0 w-full h-full object-cover" 
+        />
+        <h1 className="font-['SpaceGroteskBold'] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold">
+          Nosotros
+        </h1>
+      </div>
+
+    
+      <div className="w-full p-10 md:p-20 ">
         {/* Introducción */}
-        <h2 className="font-['SpaceGroteskBold'] text-white text-left">Buenos Aires, Argentina (2002)</h2>
-        <p className="pt-[20px] pl-10 pr-[20px] font-['SpaceGroteskBold'] text-white text-left text-[30px] md:w-1/2 left-[10%]">
-          Hi, I’m Juan Estarli, a passionate web developer with a background in Information Engineering. Currently, I work as a web developer at Teatro Colón, where I focus on building innovative and efficient web solutions.
+        <h2 className="font-['SpaceGroteskBold'] text-black text-left text-3xl">Quiénes somos</h2>
+        <p className="text-lg leading-relaxed mb-5 font-['SpaceGroteskLight']">
+          Una organización que ha creado y desarrollado un nuevo emprendimiento con mucho entusiasmo y una gran pasión.
         </p>
 
-        {/* Experiencia Profesional */}
-        <h3 className="text-2xl font-semibold mb-3">Professional Experience</h3>
-        <p className="text-lg leading-relaxed mb-5">
-          With over X years of experience in web development, I have honed my skills in building responsive and user-centric web applications. As a developer at <span className="font-bold">Kelsus</span>, I focus on delivering top-notch web solutions for businesses. Additionally, as the webmaster of Teatro Colón, I manage and enhance the performance of one of the most prestigious cultural sites in the world.
+        {/* Misión */}
+        <h3 className="text-2xl font-semibold mb-3 font-['SpaceGroteskBold']">Nuestra Misión</h3>
+        <p className="text-lg leading-relaxed mb-5 font-['SpaceGroteskLight']">
+          Somos una familia en la que tanto viajar, como jugar al golf, son parte esencial de nuestro disfrute. Por otro lado, ser mendocinos de origen y por opción constituye un plus, pues nos permite elegir los mejores sitios sobre la base de una óptima relación precio/calidad para que puedas disfrutar a pleno tu estadía.
         </p>
 
-        {/* Habilidades */}
-        <h3 className="text-2xl font-semibold mb-3">Skills</h3>
-        <ul className="list-disc list-inside mb-5">
-          <li>Frontend Development: React, HTML, CSS, JavaScript</li>
-          <li>Backend Development: Node.js, Express</li>
-          <li>Styling Frameworks: Tailwind CSS, Bootstrap</li>
-          <li>Version Control: Git, GitHub</li>
-          <li>Database Management: MongoDB, MySQL</li>
-        </ul>
-
-        {/* Proyectos Destacados */}
-        <h3 className="text-2xl font-semibold mb-3">Featured Projects</h3>
-        <p className="text-lg leading-relaxed mb-5">
-          I have worked on a variety of projects, from e-commerce platforms to internal tools for companies. Some of my notable projects include:
-        </p>
-        <ul className="list-disc list-inside mb-5">
-          <li><span className="font-bold">Teatro Colón Website:</span> Managed and optimized the performance and SEO of the website, enhancing user experience.</li>
-          <li><span className="font-bold">XYZ Project:</span> A web application built using React and Node.js for [specific purpose].</li>
-        </ul>
-
-        {/* Información Personal Adicional (Opcional) */}
-        <h3 className="text-2xl font-semibold mb-3">Beyond Code</h3>
-        <p className="text-lg leading-relaxed">
-          When I'm not coding, you can find me exploring new technologies, reading about cryptocurrency, or enjoying outdoor activities. I believe in constant learning and strive to stay updated with the latest trends in technology.
+        {/* Valores */}
+        <h3 className="text-2xl font-semibold mb-3 font-['SpaceGroteskBold']">Nuestros Valores</h3>
+        <p className="text-lg leading-relaxed mb-5 font-['SpaceGroteskLight']">
+          Nuestros valores son: seriedad, expertise y compromiso con el cliente.
         </p>
       </div>
     </section>

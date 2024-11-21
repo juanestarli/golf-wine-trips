@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // Importa Link
 const CardProject = ({ imageSrc, imageAlt, title, description }) => {
   return (
     <Link 
-      to={`/work/${encodeURIComponent(title)}`} // Usar Link para la navegación
+      to={`/paquetes/${encodeURIComponent(title)}`} // Usar Link para la navegación
       style={styles.cardContainer} 
       className="card" // Añadir clase si necesitas estilos adicionales
     >
@@ -30,7 +30,7 @@ const styles = {
     width: '100%',  // Ajusta el ancho según sea necesario
     padding: '50px',
     cursor: 'pointer',
-    backgroundColor: 'black', // Corregido el error de 'backgroundcolor'
+    backgroundColor: 'white', // Corregido el error de 'backgroundcolor'
     textDecoration: 'none', // Evitar subrayado en el Link
     hover: "round-full",
   },
@@ -47,13 +47,13 @@ const styles = {
   },
   description: {
     fontSize: '16px',
-    color: 'white',
+    color: 'black',
     textAlign: 'left',
     fontFamily: 'SpaceGroteskLight, sans-serif',
   },
   title: {
     fontFamily: 'SpaceGroteskBold, sans-serif',
-    color: 'white',
+    color: 'black',
     fontSize: '42px',
     textAlign: 'left',
   },

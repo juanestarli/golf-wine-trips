@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "Double Eagle",
+      "description": "4 días y 5 noches para un mínimo de 8 jugadores.",
+      "image": "/pexels-jopwell-1325751.jpg",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Birdie",
+      "description": "4 días y 5 noches para un mínimo de 8 personas. (4 jugadores /4 acompañantes).",
+      "image": "/pexels-kindelmedia-6573247.jpg",
+      "featured": true
+    }
+  ]
+  
