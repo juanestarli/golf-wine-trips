@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardProjectHome from '../components/CardProjectHome';
 import paquetesData from '../data/paquetes.json'; // Asegúrate de que la ruta sea correcta
+import Slider from '../components/Slider';
 
 export const Inicio = () => {
   const [featuredWorks, setFeaturedWorks] = useState([]);
@@ -13,17 +14,7 @@ export const Inicio = () => {
 
   return (
     <>
-      <div className="relative w-full h-screen">
-        <video 
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/6573432-hd_1920_1080_30fps.mp4" type="video/mp4" />
-          Tu navegador no soporta el elemento de video.
-        </video>
-      </div>
+      <Slider></Slider>
 
       <div className="relative w-full h-[40vh] bg-white p-5">
         <div className="flex items-center justify-center w-full h-full">
@@ -38,7 +29,7 @@ export const Inicio = () => {
 
 
 
-      <div className="s:pt-[0px] md:pt-10 pl-10 pb-10 font-space-grotesk font-bold text-black bg-white w-full text-left text-[10vw] h-[40%]">
+      <div className="s:pt-[0px] md:pt-10 pl-10 pb-10 font-['CinzelBold'] text-black bg-white w-full text-left text-[9vw] h-[40%]">
         <h1 className="w-1/2 leading-[0.8]">Paquetes</h1>
       </div>
 

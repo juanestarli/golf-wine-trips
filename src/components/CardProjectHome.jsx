@@ -5,58 +5,23 @@ const CardProject = ({ imageSrc, imageAlt, title, description }) => {
   return (
     <Link 
       to={`/paquetes/${encodeURIComponent(title)}`} // Usar Link para la navegación
-      style={styles.cardContainer} 
-      className="card" // Añadir clase si necesitas estilos adicionales
+      className="flex flex-col items-start w-full p-8 bg-white text-black no-underline hover:shadow-lg rounded-lg transition-transform duration-200 transform hover:scale-103 "
     >
       {/* Imagen clickeable */}
-      <div style={styles.imageContainer}>
-        <img src={imageSrc} alt={imageAlt} style={styles.image} />
+      <div className="w-full h-auto overflow-hidden rounded-md">
+        <img 
+          src={imageSrc} 
+          alt={imageAlt} 
+          className="w-full h-full object-cover rounded-md hover:scale-105 transition-transform duration-300"
+        />
       </div>
       {/* Texto debajo de la imagen */}
-      <div style={styles.textContainer}>
-        <p style={styles.title}>{title}</p>
-        <p style={styles.description}>{description}</p>
+      <div className="mt-4">
+        <p className="text-2xl font-bold text-left font-['CinzelBold']">{title}</p>
+        <p className="text-lg text-left font-['CinzelRegular'] text-gray-700">{description}</p>
       </div>
     </Link>
   );
-};
-
-// Estilos en línea para el componente
-const styles = {
-  cardContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start', // Cambiado de 'left' a 'flex-start'
-    width: '100%',  // Ajusta el ancho según sea necesario
-    padding: '50px',
-    cursor: 'pointer',
-    backgroundColor: 'white', // Corregido el error de 'backgroundcolor'
-    textDecoration: 'none', // Evitar subrayado en el Link
-    hover: "round-full",
-  },
-  imageContainer: {
-    width: '100%',
-    height: 'auto',
-    hover: "round-full",
-  },
-  image: {
-    width: '100%',
-  },
-  textContainer: {
-    marginTop: '10px',
-  },
-  description: {
-    fontSize: '16px',
-    color: 'black',
-    textAlign: 'left',
-    fontFamily: 'SpaceGroteskLight, sans-serif',
-  },
-  title: {
-    fontFamily: 'SpaceGroteskBold, sans-serif',
-    color: 'black',
-    fontSize: '42px',
-    textAlign: 'left',
-  },
 };
 
 export default CardProject;

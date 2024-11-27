@@ -6,7 +6,7 @@ const CardProjectWork = ({ paquete }) => {
     <Link
       to={paquete.link}
       key={paquete.id}
-      className="bg-white-800 text-black rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 w-full"
+      className="bg-white-800 text-black rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 w-full hover:bg-black hover:text-white"
     >
       {/* Imagen del proyecto */}
       <img
@@ -17,8 +17,8 @@ const CardProjectWork = ({ paquete }) => {
 
       {/* Contenido de la card */}
       <div className="p-6">
-        <h2 className="text-xl font-semibold mb-2">{paquete.title}</h2>
-        <p className="text-sm">{paquete.description}</p>
+        <h2 className="text-xl font-semibold mb-2 font-['CinzelBold']">{paquete.title}</h2>
+        <p className="text-sm font-['CinzelRegular']">{paquete.description}</p>
       </div>
     </Link>
   );

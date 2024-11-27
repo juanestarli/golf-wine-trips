@@ -24,7 +24,7 @@ export default function NavBar() {
               alt="Logo" 
               className="w-8 h-8 object-contain" 
             />
-            <Link to="/" className="text-black text-xl font-bold px-2 py-2 font-['SpaceGroteskBold']">
+            <Link to="/" className="text-black text-xl font-bold px-2 py-2 font-['CinzelBold']">
               Golf & Wine Trips
             </Link>
           </div>
@@ -47,13 +47,13 @@ export default function NavBar() {
           </div>
 
           {/* Desktop menu (hidden on mobile) */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-4 font-['CinzelRegular']">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
                 className={classNames(
-                  item.current ? 'bg-black text-black' : 'text-black hover:bg-gray-700 hover:text-gray-500', // Texto negro por defecto, gris al hover
+                  item.current ? 'bg-black text-black' : 'text-black hover:bg-black hover:text-white', // Texto negro por defecto, gris al hover
           'block px-3 py-2 rounded-md text-base font-medium'
                 )}
               >
@@ -66,14 +66,14 @@ export default function NavBar() {
 
       {/* Mobile menu panel */}
       <DisclosurePanel className="md:hidden">
-        <div className="space-y-1 px-2 pt-2 pb-3 text-right">
+        <div className="space-y-1 px-2 pt-2 pb-3 text-right font-['CinzelRegular']">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
               as={Link}
               to={item.href}
               className={classNames(
-                item.current ? 'bg-black text-black' : 'text-black hover:bg-gray-700 hover:text-gray-500', // Texto negro por defecto, gris al hover
+                item.current ? 'bg-black text-black' : 'text-black hover:bg-black hover:text-white', // Texto negro por defecto, gris al hover
           'block px-3 py-2 rounded-md text-base font-medium'
               )}
             >

@@ -15,6 +15,27 @@ src: url('./data/SPACEGROTESK-LIGHT.OTF') format('opentype'); /* Cambia según e
 font-weight: normal;
 font-style: normal;
 }
+@font-face {
+  font-family: 'CinzelBlack';
+  src: url('./data/Cinzel-Black.ttf') format('opentype'); /* Cambia según el formato */
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'CinzelRegular';
+  src: url('./data/Cinzel-Regular.ttf') format('opentype'); /* Cambia según el formato */
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'CinzelBold';
+  src: url('./data/Cinzel-Bold.ttf') format('opentype'); /* Cambia según el formato */
+  font-weight: normal;
+  font-style: normal;
+  }
+
 
 
 #App{
