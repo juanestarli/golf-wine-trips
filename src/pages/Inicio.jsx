@@ -21,7 +21,7 @@ export const Inicio = () => {
           <img 
             src="logo-golf-wine.png" 
             alt="Logo" 
-            className="w-2/5 h-2/5 object-contain" 
+            className="w-3/5 h-3/5 object-contain" 
           />
           <a 
             href="/nosotros" 
@@ -36,7 +36,7 @@ export const Inicio = () => {
 
 
 
-      <div className="s:pt-[0px] md:pt-10 pl-10 pb-10 font-['CinzelBold'] text-black bg-white w-full text-left text-[9vw] h-[40%]">
+      <div className="s:pt-[0px] md:pt-10 pl-10 pb-10 font-['CinzelBold'] text-black bg-white w-full text-left text-[8vw] h-[40%]">
         <h1 className="w-1/2 leading-[0.8]">Paquetes</h1>
       </div>
 
