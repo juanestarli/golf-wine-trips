@@ -3,7 +3,7 @@ import './App.css';
 import { Inicio } from "./pages/Inicio";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Paquetes from "./pages/Paquetes";
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";

@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolioJuanEstarli/static/css/main.3d15db60.css",
-    "main.js": "/portfolioJuanEstarli/static/js/main.ff97630d.js",
-    "static/js/453.ed3810f9.chunk.js": "/portfolioJuanEstarli/static/js/453.ed3810f9.chunk.js",
-    "static/media/SPACEGROTESK-BOLD.OTF": "/portfolioJuanEstarli/static/media/SPACEGROTESK-BOLD.84491a7b22b78320f103.OTF",
-    "static/media/SPACEGROTESK-LIGHT.OTF": "/portfolioJuanEstarli/static/media/SPACEGROTESK-LIGHT.4f28aa818ef836a4d0bf.OTF",
-    "index.html": "/portfolioJuanEstarli/index.html",
-    "main.3d15db60.css.map": "/portfolioJuanEstarli/static/css/main.3d15db60.css.map",
-    "main.ff97630d.js.map": "/portfolioJuanEstarli/static/js/main.ff97630d.js.map",
-    "453.ed3810f9.chunk.js.map": "/portfolioJuanEstarli/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/golf-wine-trips/static/css/main.4d7c563b.css",
+    "main.js": "/golf-wine-trips/static/js/main.1f2c062c.js",
+    "static/js/453.ed3810f9.chunk.js": "/golf-wine-trips/static/js/453.ed3810f9.chunk.js",
+    "static/media/Cinzel-Black.ttf": "/golf-wine-trips/static/media/Cinzel-Black.a6bc3559bf2df608728d.ttf",
+    "static/media/Cinzel-Bold.ttf": "/golf-wine-trips/static/media/Cinzel-Bold.6cc1a5a1184f05e623e7.ttf",
+    "static/media/Cinzel-Regular.ttf": "/golf-wine-trips/static/media/Cinzel-Regular.f6dc41c2dfb6eb7c173c.ttf",
+    "static/media/SPACEGROTESK-BOLD.OTF": "/golf-wine-trips/static/media/SPACEGROTESK-BOLD.84491a7b22b78320f103.OTF",
+    "static/media/SPACEGROTESK-LIGHT.OTF": "/golf-wine-trips/static/media/SPACEGROTESK-LIGHT.4f28aa818ef836a4d0bf.OTF",
+    "index.html": "/golf-wine-trips/index.html",
+    "main.4d7c563b.css.map": "/golf-wine-trips/static/css/main.4d7c563b.css.map",
+    "main.1f2c062c.js.map": "/golf-wine-trips/static/js/main.1f2c062c.js.map",
+    "453.ed3810f9.chunk.js.map": "/golf-wine-trips/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d15db60.css",
-    "static/js/main.ff97630d.js"
+    "static/css/main.4d7c563b.css",
+    "static/js/main.1f2c062c.js"
   ]
 }
