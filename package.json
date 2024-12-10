@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juanestarli.github.io/golf-wine-trips/",
+  "homepage": "https://juanestarli.github.io/",
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.4",

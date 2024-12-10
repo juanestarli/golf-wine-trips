@@ -12,7 +12,7 @@ import { About } from "./pages/About";
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <div className="App" style={{backgroundColor: "white", height: "100vh", overflowX: 'hidden'}}>
       <Header />
       <main>

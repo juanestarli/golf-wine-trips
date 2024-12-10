@@ -25,7 +25,7 @@ export const Inicio = () => {
           />
           <a 
             href="/nosotros" 
-            className="mt-4 px-6 py-2 bg-black text-white rounded hover:bg-white hover:text-black transition duration-300 font-['CinzelBold']"
+            className="mt-4 px-6 py-2 bg-white text-black rounded hover:bg-black hover:text-white transition duration-300 font-['CinzelBold']"
           >
             Conocé más sobre nosotros
           </a>
