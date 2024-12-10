@@ -102,11 +102,11 @@ export const Contact = () => {
         </button>
       </form>
 
-      <h2 className="mt-8 text-xl font-[SpaceGroteskLight]">Encontranos en redes</h2>
+      <h2 className="mt-8 text-xl font-[CinzelRegular]">Encontranos en redes</h2>
 
       <div className="mt-4 space-x-8">
-        <a href="https://instagram.com" className="hover:underline font-[SpaceGroteskBold]">INSTAGRAM</a>
-        <a href="https://github.com" className="hover:underline font-[SpaceGroteskBold]">WHATSAPP</a>
+        <a href="https://instagram.com" className="hover:underline font-[CinzelBold]">INSTAGRAM</a>
+        <a href="https://github.com" className="hover:underline font-[CinzelBold]">WHATSAPP</a>
       </div>
 
       

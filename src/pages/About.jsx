@@ -18,20 +18,20 @@ export const About = () => {
     
       <div className="w-full p-10 md:p-20 ">
         {/* Introducción */}
-        <h2 className="font-['SpaceGroteskBold'] text-black text-left text-3xl">Quiénes somos</h2>
-        <p className="text-lg leading-relaxed mb-5 font-['SpaceGroteskLight']">
+        <h2 className="font-['CinzelBold'] text-black text-left text-3xl">Quiénes somos</h2>
+        <p className="text-lg leading-relaxed mb-5 font-['CinzelRegular']">
           Una organización que ha creado y desarrollado un nuevo emprendimiento con mucho entusiasmo y una gran pasión.
         </p>
 
         {/* Misión */}
-        <h3 className="text-2xl font-semibold mb-3 font-['SpaceGroteskBold']">Nuestra Misión</h3>
-        <p className="text-lg leading-relaxed mb-5 font-['SpaceGroteskLight']">
+        <h3 className="text-2xl font-semibold mb-3 font-['CinzelBold']">Nuestra Misión</h3>
+        <p className="text-lg leading-relaxed mb-5 font-['CinzelRegular']">
           Somos una familia en la que tanto viajar, como jugar al golf, son parte esencial de nuestro disfrute. Por otro lado, ser mendocinos de origen y por opción constituye un plus, pues nos permite elegir los mejores sitios sobre la base de una óptima relación precio/calidad para que puedas disfrutar a pleno tu estadía.
         </p>
 
         {/* Valores */}
-        <h3 className="text-2xl font-semibold mb-3 font-['SpaceGroteskBold']">Nuestros Valores</h3>
-        <p className="text-lg leading-relaxed mb-5 font-['SpaceGroteskLight']">
+        <h3 className="text-2xl font-semibold mb-3 font-['CinzelBold']">Nuestros Valores</h3>
+        <p className="text-lg leading-relaxed mb-5 font-['CinzelRegular']">
           Nuestros valores son: seriedad, expertise y compromiso con el cliente.
         </p>
       </div>
