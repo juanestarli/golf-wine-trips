@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/golf-wine-trips/static/css/main.f3c9e84c.css",
-    "main.js": "/golf-wine-trips/static/js/main.dd4bc3b0.js",
+    "main.css": "/golf-wine-trips/static/css/main.4d7c563b.css",
+    "main.js": "/golf-wine-trips/static/js/main.1f2c062c.js",
     "static/js/453.ed3810f9.chunk.js": "/golf-wine-trips/static/js/453.ed3810f9.chunk.js",
     "static/media/Cinzel-Black.ttf": "/golf-wine-trips/static/media/Cinzel-Black.a6bc3559bf2df608728d.ttf",
     "static/media/Cinzel-Bold.ttf": "/golf-wine-trips/static/media/Cinzel-Bold.6cc1a5a1184f05e623e7.ttf",
@@ -9,12 +9,12 @@
     "static/media/SPACEGROTESK-BOLD.OTF": "/golf-wine-trips/static/media/SPACEGROTESK-BOLD.84491a7b22b78320f103.OTF",
     "static/media/SPACEGROTESK-LIGHT.OTF": "/golf-wine-trips/static/media/SPACEGROTESK-LIGHT.4f28aa818ef836a4d0bf.OTF",
     "index.html": "/golf-wine-trips/index.html",
-    "main.f3c9e84c.css.map": "/golf-wine-trips/static/css/main.f3c9e84c.css.map",
-    "main.dd4bc3b0.js.map": "/golf-wine-trips/static/js/main.dd4bc3b0.js.map",
+    "main.4d7c563b.css.map": "/golf-wine-trips/static/css/main.4d7c563b.css.map",
+    "main.1f2c062c.js.map": "/golf-wine-trips/static/js/main.1f2c062c.js.map",
     "453.ed3810f9.chunk.js.map": "/golf-wine-trips/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3c9e84c.css",
-    "static/js/main.dd4bc3b0.js"
+    "static/css/main.4d7c563b.css",
+    "static/js/main.1f2c062c.js"
   ]
 }
